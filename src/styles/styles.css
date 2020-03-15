@@ -1,0 +1,125 @@
+/* CSS Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Variables */
+
+/* Layout */
+.app {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculator */
+.calculator {
+    height: 80vh;
+    width: 50%;
+    box-shadow: 0 2rem 4rem var(--shadow);
+    background-color: white;
+
+}
+
+@media screen and (max-width: 1280px) {
+    .calculator {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .calculator {
+        width: 80%;
+    }
+}
+
+/* Screen */
+.screen {
+    height: 25vh;
+    width: 100%;
+    padding: 0 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #1c92d2;
+    background-color: white;
+}
+
+.computation-screen {
+    height: 6vh;
+    font-size: 2.5rem;
+    color: #1c92d2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.result-screen {
+    height: 19vh;
+    font-size: 8rem;
+    font-weight: 600;
+    color: #1c92d2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.keypad {
+    height: 50vh;
+    width: 100%;
+    background-color:white;
+}
+
+.keypad__row {
+    display: flex;
+    height: 11vh;
+    width: 100%;
+    background-color:white;
+}
+
+
+.btn {
+    width: 25%;
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color:#1c92d2;
+    align-items: center;
+}
+
+button{
+    border:none;
+    color: white;
+    text-decoration: none; 
+    font-size: 2.4rem;
+    background-color:#1c92d2;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border:none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+} 
+
+
+.btn:hover {
+    color: white;
+    box-shadow: inset 0 0 30px #51addf;
+
+}
+
